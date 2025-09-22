@@ -126,9 +126,9 @@ function functionDeclaration() {
 	return "Function Declaration";
 }
 
-// console.log(functionExpressionWithVar()); // ❌ TypeError. Functions are not hoisted and initialized, only variables
-// console.log(functionExpressionWithLet()); // ❌ ReferenceError. let is in TDZ. Accessing before declaration throws ReferenceError
-// console.log(functionExpressionWithConst()); // ❌ ReferenceError. const is in TDZ. Accessing before declaration throws ReferenceError
+// console.log(functionExpressionWithVar()); // ❌ TypeError. Variable hoisted and initialized with value undefined. Function is assigned later
+// console.log(functionExpressionWithLet()); // ❌ ReferenceError. let is hoisted in the TDZ. Accessing before declaration throws ReferenceError
+// console.log(functionExpressionWithConst()); // ❌ ReferenceError. const is hoisted in the TDZ. Accessing before declaration throws ReferenceError
 
 var functionExpressionWithVar = function () {
 	return "Function Expression with var";
