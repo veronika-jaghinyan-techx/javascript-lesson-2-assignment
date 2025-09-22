@@ -104,6 +104,8 @@ function demonstrateScope() {
 	return person;
 }
 
+// console.log('firstName outside function scope:', firstName); // ✅ accessible everywhere after its declaration since it's a global scope variable
+
 // console.log(demonstrateScope());
 
 /*------------------------------------------- Part C: Hoisting & TDZ Debugger -------------------------------------------*/
